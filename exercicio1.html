@@ -1,0 +1,34 @@
+<html>
+    <script>
+//ECMAScript ES5
+
+//Classe
+    Calculadora = function(marca){
+            this.marca=marca;
+    }
+//Metodo
+   Calculadora.prototype.descobrirMaior = function (){
+       n1=document.getElementById("n1").value;
+       n2=document.getElementById("n2").value;
+
+       if(n1 > n2){
+           window.alert("O maior número é "+n1);
+       }else{
+           window.alert("O maior número é "+n2);
+       }
+   }
+   c=new Calculadora('HP');
+
+    </script>
+    <body>
+        <form>
+            <input id="n1" placeholder="Digite N1">
+            <input id="n2" placeholder="Digite N2">
+            <input type="button" onclick="c.descobrirMaior();" value="Maior">
+
+        </form>
+
+    </body>
+        
+
+</html>
